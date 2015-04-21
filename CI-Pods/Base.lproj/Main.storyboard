@@ -31,13 +31,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deh-BQ-Vfk">
+                                <rect key="frame" x="268" y="389" width="65" height="30"/>
+                                <state key="normal" title="Say Hello">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hq8-9R-s9g"/>
+                                    <action selector="pushMeAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qev-UO-VGI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="JpV-Y4-X46" secondAttribute="centerX" id="Jm9-6d-b6x"/>
+                            <constraint firstItem="Deh-BQ-Vfk" firstAttribute="top" secondItem="iiN-9G-aiw" secondAttribute="bottom" constant="23" id="M70-OE-9V0"/>
                             <constraint firstItem="JpV-Y4-X46" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="186" id="MCy-tr-U9f"/>
                             <constraint firstAttribute="centerX" secondItem="iiN-9G-aiw" secondAttribute="centerX" id="Mri-H6-4IJ"/>
                             <constraint firstItem="iiN-9G-aiw" firstAttribute="top" secondItem="JpV-Y4-X46" secondAttribute="bottom" constant="109" id="Ub8-io-gY1"/>
+                            <constraint firstAttribute="centerX" secondItem="Deh-BQ-Vfk" secondAttribute="centerX" id="gU1-d4-8KU"/>
                         </constraints>
                     </view>
                 </viewController>
